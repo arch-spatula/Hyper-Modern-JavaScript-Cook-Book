@@ -50,6 +50,11 @@ WebStorm
 Vim
 에초에 이런 에디터를 쓰고 있으면 이런 글 그만 읽으세요.
 
+서브라임 텍스트 sublimetext
+https://www.sublimetext.com/
+
+이런게 존재한다는 것을 발견했습니다.
+
 # 학습자료
 학습자료는 사방에 있습니다.
 
