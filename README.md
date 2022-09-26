@@ -1,5 +1,5 @@
 # JavaScript Cook Book
-자바스크립트 활용법을 알려줍니다. 자바스크립트라는 프로그래밍 언어를 요리재료처럼 다루는 방법을 알려드리기 위한 리포지토리입니다.
+자바스크립트 활용법을 알려줍니다. 자바스크립트라는 프로그래밍 언어를 요리재료처럼 다루는 방법을 알려드리기 위한 리포지토리입니다. 절대 웹으로 봐주시길 바랍니다. 관련 유튜브 링크를 많이 포함하고 있습니다. 
 
 작성시작: 2022.09.24.  
 Status: meme 🫠  
@@ -31,3 +31,24 @@ Version: 0.01
 저의 목표는 이 개그의 모든 요소를 이해할 수 있게 여러분의 자바스크립트 지식을 끌어올리고자 합니다.
 
 
+
+
+# 분류가 필요한 것들
+
+this 키워드
+
+[Why I try to avoid the “this” keyword in javascript](https://www.youtube.com/watch?v=ZXlnqOGUb6c)
+
+랙시컬 스코프
+
+재귀함수
+
+클로저
+
+고차함수
+
+함수형 프로그래밍
+
+[JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil - JSUnconf](https://www.youtube.com/watch?v=e-5obm1G_FY)
+
+선행학습: 고차함수
