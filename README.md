@@ -11,7 +11,7 @@ Version: 0.01
 개인적으로 자바스크립트를 다루었던 경험을 공유하고자 합니다.
 
 <p align="center">
-<img src="./img/190937970-6b535d1a-efe7-4f7e-a4af-1df72ac08492.png" width="400px">
+<img src="./img/Soyjak_Meme_Javascript.png" width="400px">
 </p>
 
 # 목차
@@ -52,3 +52,5 @@ this 키워드
 [JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil - JSUnconf](https://www.youtube.com/watch?v=e-5obm1G_FY)
 
 선행학습: 고차함수
+
+자료구조와 알고리즘

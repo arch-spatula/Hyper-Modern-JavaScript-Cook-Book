@@ -44,6 +44,35 @@ Node.js로 서버, 리액트 네이티브로 앱, 일랙트론으로 데스크�
 (https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A0%88%EB%93%9C_(%EC%BB%B4%ED%93%A8%ED%8C%85)#:~:text=%EC%8A%A4%EB%A0%88%EB%93%9C(thread)%EB%8A%94%20%EC%96%B4%EB%96%A0%ED%95%9C%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8,%EB%A5%BC%20%EB%8F%99%EC%8B%9C%EC%97%90%20%EC%8B%A4%ED%96%89%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8B%A4.)
 
 
+## 가비지 컬랙티드
+
+메모리 주소를 가르키는 것이 없으면 가비지 컬랙터가 알아서 삭제해줍니다.
+
+
+## 논블럭 이벤트 루프
+선행학습: 자료구조 & 알고리즘의 queue, stack, heap
+[이름](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+[![어쨌든 이벤트 루프는 무엇입니까? | Philip Roberts | JSConf EU](./img/What_the_heck_is_the_event_loop_anyway_PhilipRoberts_JSConf%20EU.jpeg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+콜스택을 사용합니다.
+
+call stack
+
+stack trace
+
+블록킹은 실행이 느린 것이다. 서버랑 통신하는 것, 이미지 처리하는 것 등... 컴퓨터가 처리하기 느린 것들은 존재한다.
+
+왜 문제가 되는가? 동기적으로 작동하면 간단한 실행은 앞의 실행을 기다려야 한다.
+
+블록킹문제는 비동기처리로 해결할 수 있다. 
+
+WebAPI
+
+참고. while 문의 문제는 동기적으로 작동한다.
+
+이벤트 루프는 call stack이 비어있으면 task queue에서 call stack으로 밀어넣는다.
+
+[요약](https://velog.io/@paul_kang/%EC%96%B4%EC%A8%8C%EB%93%A0-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C)
 
 # 자바스크립트의 역사
 
