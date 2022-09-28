@@ -3,6 +3,21 @@
 
 # 자바스크립트란 무엇인가?
 
+
+> 자바(Java)랑 자바스크립트(JavaScript)랑 얼만큼 다른가요?  
+> [스택 오버플로우](https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java)
+
+> 햄과 햄스터만큼  
+> 인도와 인도네시아만큼  
+> 파와 파슬리만큼  
+> 쥐와 쥐며느리만큼  
+> 뱀과 뱀장어의 차이  
+> 갈매기와 갈매기살만큼  
+> 팽이와 팽이버섯만큼  
+> cat과 catfish만큼  
+> Car와 Carpet만큼  
+> 다른 언어입니다.
+
 100초 안에 설명하는 자바스크립트입니다.
 
 [![JavaScript in 100 Seconds](./img/JavaScript_in_100_Seconds.jpeg)](https://www.youtube.com/watch?v=DHjqpvDnNGE)
@@ -48,11 +63,21 @@ Node.js로 서버, 리액트 네이티브로 앱, 일랙트론으로 데스크�
 
 메모리 주소를 가르키는 것이 없으면 가비지 컬랙터가 알아서 삭제해줍니다.
 
+## 인터프리티드 || JIT 컴파일된
+
+Just In Time
+
+## 프로토타입 기반
+
+## 멀티패러다임
+
+## 다이나믹
 
 ## 논블럭 이벤트 루프
 선행학습: 자료구조 & 알고리즘의 queue, stack, heap
-[이름](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
-[![어쨌든 이벤트 루프는 무엇입니까? | Philip Roberts | JSConf EU](./img/What_the_heck_is_the_event_loop_anyway_PhilipRoberts_JSConf%20EU.jpeg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+[![어쨌든 이벤트 루프는 무엇입니까? | Philip Roberts | JSConf EU](./img/What_the_heck_is_the_event_loop_anyway_PhilipRoberts_JSConf_EU.jpeg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
 
 콜스택을 사용합니다.
 
@@ -75,4 +100,5 @@ WebAPI
 [요약](https://velog.io/@paul_kang/%EC%96%B4%EC%A8%8C%EB%93%A0-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9E%85%EB%8B%88%EA%B9%8C)
 
 # 자바스크립트의 역사
+
 

@@ -47,6 +47,8 @@ this 키워드
 
 고차함수
 
+immutable JavaScript
+
 함수형 프로그래밍
 
 [JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil - JSUnconf](https://www.youtube.com/watch?v=e-5obm1G_FY)
