@@ -1,5 +1,9 @@
 # 스택오버플로우가 뽑은 최고의 주석(comment)들
 
+학습 의존성: (없음)
+
+아래는 스택오버플로우에서 뽑은 최고의 주석들입니다.
+
 > When I wrote this, only God and I understood what I was doing.\
 > Now, God only knows.
 
@@ -10,16 +14,16 @@
 > drunk, fix later
 
 
-> <1st dev> images are deleted by GDI plus
-> -----------------------
+> <1nd dev> images are deleted by GDI plus\
+> \---------------------------------------\
 > <2nd dev> I'm not sure about that some
 
 
-> somedev 1 - 2002.06.07. Adding temporary tracking of login screen.
+> somedev 1 - 2002.06.07. Adding temporary tracking of login screen.\
 > somedev 2 - 2007.05.22. Temporary my ass.
 
 
-> This is not a useful comment, but you are useful and can do this <3
+> This is not a useful comment, but you are useful and can do this <3\
 > -by Kelly Vaughn
 
 
@@ -45,6 +49,11 @@
 
 주석은 여러분의 불량한 친구입니다. 학교 다닐 때 같이 있으면 재미있지만 인생 말아먹는 친구가 생각나나요? 주석은 이런 친구입니다. 어려분이 코드를 작성하면서 생각을 정리하기 좋은 수단입니다. 하지만 코드를 작성하고 나중에 꼭 지우도록 합니다. 주석으로 남아야 하는 정보는 이 코드가 왜 있는지, 왜 이렇게 작성했는에 대해서만 남아야 합니다. 어떻게 동작하는지는 처음에 주석으로 표시하고 네이밍과 구조로 직관적으로 이해할 수 있드면 어떻게 동작하는지는 삭제합니다.
 
+<!-- 코드를 작성하는 순서 보여주기 -->
+
+<!-- 무엇을 구현할지 정리, 왜 필요한지 작성하는 주석, pseudo code -->
+<!-- 어떻게 동작하는지 그대로 구현 -->
+<!-- 클린코드로 네이밍 수정 후 어떻게 동작하는지 주석 삭제 -->
 
 이제 조금 고급스러운 주석 기능을 배워보겠습니다.
 
@@ -54,14 +63,22 @@
  * /
 ```
 
-`/**`까지 키보드에 치고 enter를 눌러보시면 JSDoc으로 작성될 것입니다. 
+`/**`까지 키보드에 치고 `↵`를 눌러보시면 [JSDoc](https://jsdoc.app/)으로 작성될 것입니다. 
 
+<!-- TODO 생성 gif 넣기 -->
 (시범 gif)
+
+https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf
 
 이 주석이 고급스러운 이유는 개발자 경험을 좋게 만들어주기 때문입니다.
 
+<!-- TODO 자주쓰는 @??? 설명과 용례 추가하기 -->
 
-[The art of code comments](https://www.youtube.com/watch?v=yhF7OmuIILc)
+<!-- TODO @see 를 스택 오버플로우에서 참고한 링크 넣기 -->
+<!-- TODO @pram 무슨 내용이 들어 가는지 -->
+<!-- TODO @author 누가 코드를 작성했는지 -->
+
+[The art of code comments](https://www.youtube.com/watch?v=yhF7OmuIILc)\
 코드가 클린하면 작성할 필요없다는 말이 많습니다. 
 코드는 어떻게 동작하는지 묘사할 수 있어도 왜 동작해야 하는지는 설명할 수 없습니다.
 이분법적으로 클린하면 주석은 필요없다고 생각할 수 있습니다.

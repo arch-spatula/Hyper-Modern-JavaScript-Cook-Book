@@ -4,19 +4,20 @@
 # 자바스크립트란 무엇인가?
 
 
-> 자바(Java)랑 자바스크립트(JavaScript)랑 얼만큼 다른가요?  
-> [스택 오버플로우](https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java)
+> 자바(Java)랑 자바스크립트(JavaScript)랑 무슨 차이인가요?\
+> [by 스택 오버플로우](https://stackoverflow.com/questions/245062/whats-the-difference-between-javascript-and-java)
 
-> 햄과 햄스터만큼  
-> 인도와 인도네시아만큼  
-> 파와 파슬리만큼  
-> 쥐와 쥐며느리만큼  
-> 뱀과 뱀장어의 차이  
-> 갈매기와 갈매기살만큼  
-> 팽이와 팽이버섯만큼  
-> cat과 catfish만큼  
-> Car와 Carpet만큼  
-> 다른 언어입니다.
+> 햄과 햄스터의 차이\
+> 인도와 인도네시아의 차이\
+> 파와 파슬리의 차이\
+> 쥐와 쥐며느리의 차이\
+> 뱀과 뱀장어의 차이\
+> 갈매기와 갈매기살의 차이\
+> 팽이와 팽이버섯의 차이\
+> cat과 catfish의 차이\
+> Car와 Carpet의 차이 입니다.\
+> \
+> 그래서 그냥 다른 언어입니다.
 
 100초 안에 설명하는 자바스크립트입니다.
 
@@ -31,6 +32,7 @@
 7. 다이나믹 언어
 8. 논블럭 이벤트 루프
 
+https://dev.to/damxipo/javascript-versus-memes-explaining-various-funny-memes-2o8c
 
 1995년에 ~~저랑 동갑이네요.~~ 브랜든 아이크에게 일주일만에 만들어졌습니다. 넷스케이프 브라우저에 쉽게 배울 수 있는 스크립트 언어를 만드는 게 목표였습니다. 
 
@@ -63,6 +65,8 @@ Node.js로 서버, 리액트 네이티브로 앱, 일랙트론으로 데스크�
 
 메모리 주소를 가르키는 것이 없으면 가비지 컬랙터가 알아서 삭제해줍니다.
 
+https://www.youtube.com/watch?v=ip51Y5v3WLk
+
 ## 인터프리티드 || JIT 컴파일된
 
 Just In Time 줄여서 짓이라고 부르기도 합니다.
@@ -81,10 +85,16 @@ Just In Time 줄여서 짓이라고 부르기도 합니다.
 
 ## 다이나믹
 
-자료형이 상황에 따라 유연하게 바뀝니다. 초기에는 아주 생산성이 높아 좋습니다. 하지만 프로젝트의 사이즈가 커지면서 예측할 수 없는 문제들을 많이 만듭니다. 그래서 동적인 자료형보단 정적인 자료형을 선호하게 됩니다. 이런 이유로 ~~우리의 햄~~ Java가 인기가 많아진 것도 이런 이유입니다.
+자료형이 상황에 따라 유연하게 바뀝니다. 작업초반에는 자유도랑 생산성이 높아 좋습니다. 하지만 프로젝트의 사이즈가 커지면서 예측할 수 없는 문제들을 많이 만듭니다. 그래서 동적인 자료형보단 정적인 자료형을 선호하게 됩니다. 이런 이유로 ~~우리의 햄~~ Java가 인기가 많아진 것도 이런 이유입니다. 개발에서 항상 규모랑 자유도는 반비례해야 합니다. 큰 규모의 작업에게 자유도란 주적입니다.
+
+<p align="center">
+<img src="./img/js_thanks.png" width="400px">
+</p>
+
+나중에는 이 밈을 이해하게 될 것입니다.<sup>[1](#javaScriptMeme)</sup>
 
 ## 논블럭 이벤트 루프
-선행학습: 자료구조 & 알고리즘의 queue, stack, heap
+선행학습: 자료구조 & 알고리즘의 `queue`, `stack`, `heap` 개념
 
 [![어쨌든 이벤트 루프는 무엇입니까? | Philip Roberts | JSConf EU](./img/What_the_heck_is_the_event_loop_anyway_PhilipRoberts_JSConf_EU.jpeg)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
@@ -113,4 +123,8 @@ WebAPI
 
 # 자바스크립트의 역사
 
+하나님이 7일만에 세계를 창조하듯이 브랜든 아이크가 자바스크립트를 7일만에 만들었습니다. 그래서 세상도 자바스크립트도 이모양입니다.
 
+
+---
+<a name="javaScriptMeme">1</a>: [Javascript vs memes](https://dev.to/damxipo/javascript-versus-memes-explaining-various-funny-memes-2o8c)

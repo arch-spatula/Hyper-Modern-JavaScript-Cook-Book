@@ -27,8 +27,80 @@ Version: 0.02
 3. 기본 문법
 4. 심화 문법
 
+<!-- TODO 예약어 & 키워드 스니펫 추가하기 -->
 예약어, 키워드
 
+```JS
+abstract
+boolean
+byte
+char
+class
+const
+debugger
+double
+enum
+export
+extends
+final
+float
+goto
+** implements
+import
+int
+interface
+long
+** native
+package
+private
+protected
+public
+short
+static
+super
+** synchronized
+throws
+** transient
+** volatile
+```
+
+자바스크립트 키워드 입니다.
+
+```JS
+break
+case
+catch
+continue
+** default : 사용자가 특별히 명령을 내리지 않으면 시스템이 자동으로 적용하는 미리 정해진 값이나 조건.
+** delete : 피연산자로 지정된 객체 프로퍼티, 배열원소, 변수의 삭제를 시도하는 단항연산자이다.
+** do : while의 변형인 do~while 문을 의미한다. 내용을 먼저 실행한 후에 조건을 비교한다.
+else
+** finally : catch절 다음에 finally 블록이 이어지는데, 앞서 try 블록에서 일어난 일에 관계없이 항상 실행이 보장되어야 할 뒷정리용 코드가 포함된다.
+for
+function
+if
+in
+** instanceof : A instanceof B의 형식으로 사용하며, A가 B의 인스턴스가 맞는지 판단한다.
+new
+return
+switch
+** this : 함수 내에서 함수 호출 맥락(context)를 의미한다. 함수를 어떻게 호출하냐에 따라서 대상이 달라진다.
+throw
+try
+typeof
+var
+void
+while
+** with : 객체를 제어하는 명령어로, 특정 객체를 여러번 사용할 경우 생략할 수 있도록 해준다.
+
+with(document){
+  	write("document.write에서 document 생략")
+}
+```
+
+자바스크립트 예약어입니다.
+
+<!-- TODO 특수 객체 목록 정리하기 -->
 특수 객체
 다양한 특수 용어
 클린코드
@@ -37,9 +109,14 @@ Version: 0.02
 저의 목표는 이 개그의 모든 요소를 이해할 수 있게 여러분의 자바스크립트 지식을 끌어올리고자 합니다.
 
 
-
+<!-- TODO 디버깅 방식 -->
+<!-- TODO console 시리즈 -->
 
 # 분류가 필요한 것들
+
+<!-- TODO commonJS 정리하기 -->
+
+<!-- TODO 호이스팅 개념 정리하기 -->
 
 this 키워드
 
@@ -53,11 +130,20 @@ this 키워드
 
 클로저
 
-고차함수
+<!-- TODO 아일랜드 아키텍쳐 -->
 
+<!-- TODO 하이드레이션 개념(프레임워크) -->
+
+<!-- TODO 자바스크립트 런타임 개념 -->
+
+
+<!-- TODO const, object.freeze(), concat(), 스프레드 연산자 -->
+<!-- TODO 자바스크립트 메모리 동작방식 -->
 immutable JavaScript
 
 함수형 프로그래밍
+<!-- TODO 데이터, 액션, 계산에 대한 개념추가 -->
+<!-- TODO 선행학습 정리 -->
 
 [JavaScript로 함수형 프로그래밍 배우기 - Anjana Vakil - JSUnconf](https://www.youtube.com/watch?v=e-5obm1G_FY)
 
@@ -121,5 +207,5 @@ https://curryyou.tistory.com/441
 
 비동기처리
 
-
+<!-- TODO 코드퀄리티 기준에 대한 것 작성, 패턴 등... -->
 
