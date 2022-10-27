@@ -3,7 +3,7 @@
 
 작성시작: 2022.09.24.  
 Status: meme 🫠  
-Version: 0.02  
+Version: 0.03  
 
 # 이것을 왜 작성하는가?
 자바스크립트를 다루는 법을 정리하는 리포지토리입니다. MDN과 다른 이유는 MDN을 참고할 뿐입니다. 자바스크립트 전체에서 훨씬더 간소한 부분만 다루기 때문입니다.
@@ -112,11 +112,57 @@ with(document){
 <!-- TODO 디버깅 방식 -->
 <!-- TODO console 시리즈 -->
 
+[자바스크립트 중급 강좌 : 140분 완성](https://www.youtube.com/watch?v=4_WLS9Lj6n4)
+
+
+[이벤트 루프, 넌 누구냐](https://tecoble.techcourse.co.kr/post/2021-08-28-event-loop/)
+
+
+[Jake Archibald: 루프 속(In the loop) - JSConf.Asia](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
+
+```js
+document.body.appendChild(el);
+el.style.display = 'none';
+```
+
+이렇게 작성하면 사용자가 순간 볼 수 있을 것이라는 생각이 들었나요? 스포하면 걱정할 필요 없습니다.
+
+랜더링과 실행은 자바스크립트에서 이미 다 결정되어 있습니다. 이 결정방식을 이해하는 강의입니다.
+
+자바스크립트에는 메인 쓰레드라는 것이 있습니다. 랜더링을 실행하고, DOM이 존재하는 곳입니다. 메인 쓰레드에서 처리가 오래걸리면(즉 블로킹) 인터랙션이 부자연스러워 집니다. 200ms 정도 걸리면 엄청 오래걸립니다.
+
+인간은 엄청나게 멀티 쓰레드입니다. 인간은 메인 쓰레드가 없습니다. 인간은 재채기 할 때만 블로킹이 발생합니다. 인간의 재채기같은 코드작성을 피해야 합니다. 보통 처리가 오래 걸리는 fetch처럼 데이터를 가져올 때 블로킹이 발생할 수 있습니다.
+
+`setTimeout(() => {}, 1000)`이 함수의 처리 방식을 이해가 가나요?
+
+시간동안 대기하고 콜백함수를 실행하는게 메서드의 스펙입니다.
+
+더 로우 레벨로 이해하려면 Queue에 실행을 올려놓습니다.
+
+이벤트 루프는 계속 실행합니다. 실행을 Queue에 올려 놓으면 메인 쓰레드가 여유로울 때 순서대로 실행합니다. Queue 자료구조 답게 FIFO입니다.
+
+랜더 단계에서 복잡해집니다. 랜더는 CSS, 레이아웃, 랜더트리 등 픽셀 정보를 구현하는 것입니다.
+
+```js
+while (true)
+```
+이렇게 실행하면 이벤트 루프에 평생(stack overflow가 발생할 까지) 브라우저는 블로킹이 발생합니다.
+
+requestAnimationFrame(() => {})
+rAF콜백은 랜더링할 때 실행할 수 있습니다. CSS를 분석하기 전부터 실행합니다.
+
+랜더링은 화면이 바뀌기 전까지 실행되지 않습니다.
+
+랜더링은 Tasks Queue랑 같이 실행할 수 있습니다.
+
+Animation Callback
+
+Micro task는 계속 실행합니다.
+
 # 분류가 필요한 것들
 
 <!-- TODO commonJS 정리하기 -->
 
-<!-- TODO 호이스팅 개념 정리하기 -->
 
 this 키워드
 
@@ -128,7 +174,7 @@ this 키워드
 
 재귀함수
 
-클로저
+클로저란 현상입니다. 클로저만 따로 이해할 수 없습니다. 랙시컬 환경부터 이해가 필요합니다. 그리고 자바스크립트를 활용하는 프로그래밍의 중요한 주춧돌 중 하나입니다.
 
 <!-- TODO 아일랜드 아키텍쳐 -->
 
@@ -155,6 +201,9 @@ immutable JavaScript
 
 
 [ArrayBuffer](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
+
+
+
 
 
 

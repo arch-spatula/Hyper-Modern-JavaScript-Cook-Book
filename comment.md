@@ -29,6 +29,10 @@
 
 # comment 주석
 
+주석이란 프로그램(코드)에서 사람이 읽기 위해 남기는 정보입니다. 컴퓨터는 주석으로 표시된 정보를 무시합니다.
+
+## 전통적인 주석들
+
 주석을 따로 다루는 이유가 있습니다. 자바스크립트 주석은 생각보다 고급스럽습니다. JSDoc을 지원해주고 있기 때문입니다. 꼰대처럼 JSDoc 써보기 전에 먼저 전통적인 주석 작성부터 다루겠습니다.
 
 또 주석을 다루는 방식도 같이 설명할 것이기 때문입니다. 프로그램에서 작성하기 위해 `//`, `/* */`, `/**` + `↵`로 치는 것은 쉬운데 무슨 내용을 담아야 할지 모르기 때문입니다.
@@ -55,6 +59,8 @@
 <!-- 어떻게 동작하는지 그대로 구현 -->
 <!-- 클린코드로 네이밍 수정 후 어떻게 동작하는지 주석 삭제 -->
 
+
+## JS
 이제 조금 고급스러운 주석 기능을 배워보겠습니다.
 
 ```JS
@@ -78,7 +84,7 @@ https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf
 <!-- TODO @pram 무슨 내용이 들어 가는지 -->
 <!-- TODO @author 누가 코드를 작성했는지 -->
 
-[The art of code comments](https://www.youtube.com/watch?v=yhF7OmuIILc)\
+
 코드가 클린하면 작성할 필요없다는 말이 많습니다. 
 코드는 어떻게 동작하는지 묘사할 수 있어도 왜 동작해야 하는지는 설명할 수 없습니다.
 이분법적으로 클린하면 주석은 필요없다고 생각할 수 있습니다.
@@ -98,6 +104,23 @@ sudo code를 작성하는 경우도 있습니다. 코드를 설계하기 위해�
 튜토리얼로 배우고 있는 동안 어떻게 동작하는 것인지 작성할 수 있습니다. 학생에게 코드를 보내고 과제를 주거나 설명할 교육자료로 제공하는 기능도 있습니다. 
 
 주석에 StackOverFlow를 참고 했다면 가능하면 링크를 주석에 담기를 권장합니다. 나중에 다시 링크로 돌아가면 더 좋은 해결법도 찾을 수 있습니다.
+
+```JS
+/**
+ * @see https://stackoverflow.com/questions/42695572/javascript-event-button-onclick-works-only-one-time
+ * @param {Array} array toDoArray, doneArray 2개의 model을 가져온다.
+ * @param {Any} columnContainer ToDoColumn, DoneColumn 중 하나를 인자로 받는다.
+ * @param {String} leftIcon toDoIcon, doneIcon 중 하나를 넣는다.
+ * @param {String} rightIcon removeIcon을 넣는다.
+ * @returns none
+ * @todo
+ * @version 1.2.3
+ * @author 
+ * [link text]{@link namepathOrURL}
+ */
+
+```
+
 
 주석의 작성방식은 주관적입니다.
 팀을 구성하는 사람마다 가진 능력과 의견이 모두 다릅니다. 
@@ -120,3 +143,11 @@ sudo code를 작성하는 경우도 있습니다. 코드를 설계하기 위해�
 
 
 # 참고 문헌.
+
+[The art of code comments](https://www.youtube.com/watch?v=yhF7OmuIILc)\
+
+[자바스크립트 20년차 개발자처럼 주석다는 법](https://www.youtube.com/watch?v=ORmnc-hLrYs)\
+
+https://www.youtube.com/watch?v=HzWf-EeE3uI
+
+https://www.youtube.com/shorts/kt0bfw4YkFk
