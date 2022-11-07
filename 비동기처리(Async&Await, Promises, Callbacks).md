@@ -192,6 +192,39 @@ run()
 훨신더 간략한 코드입니다. async는 평범한 함수를 비동기함수로 바꿔줍니다. 더이상 Promise로 해결할 수 있습니다. 함수의 async를 붙이면 자동적으로 Promise가 됩니다. 하지만 함수가 반환값을 갖게 만들 수 있습니다.
 
 
+[JavaScript Promise All | Race - 동시작업을 단순하게!](https://www.youtube.com/watch?v=a5AzftkvW9U)
+
+```js
+const timer = (time) => new Promise((resolve, reject) => {
+    setTimeout(() => resolve(time), time);
+});
+
+console.time('Promise.all')
+Promise.all([timer(1000), timer(2000), timer(3000)]).then(result => {
+    console.log(result);
+    console.timeEnd('Promise.all');
+})
+// [ 1000, 2000, 3000 ]
+// Promise.all: 3.015s
+```
+
+`all` 정적 메서드는 가장 마지막에 완료된 작업을 기준으로 `then` 메서드의 콜백을 실행합니다.
+
+```js
+const timer = (time) => new Promise((resolve, reject) => {
+    setTimeout(() => resolve(time), time);
+});
+
+console.time('Promise.all')
+Promise.race([timer(1000), timer(2000), timer(3000)]).then(result => {
+    console.log(result);
+    console.timeEnd('Promise.all');
+})
+// 1000
+// Promise.all: 1.009s
+```
+`race`는 가장 빠르게 끝난 작업을 기준으로 `then` 메서드의 콜백함수를 실행합니다.
+
 
 # freecodecamp
 [Asynchronous JavaScript Course (Async/Await, Promises, Callbacks) - 영상](https://www.youtube.com/watch?v=ZYb_ZU8LNxs)

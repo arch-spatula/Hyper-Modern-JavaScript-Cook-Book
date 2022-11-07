@@ -85,11 +85,26 @@ console.log(arr2)  //  1  3  5
 
 ## reduce
 
+```js
+const arr1 = [1, 2, 3, 4, 5];
+
+const arr2 = arr1.reduce((sum, cur) => sum + cur)
+
+console.log(arr2)  //  15
+```
+
+## all
+
+## any
+
+## flatten
+
+## every
+
 # 그외
 
 ## sort
 sort는 고차함수가 아닙니다. 암기가 필요한 메서드입니다.
-
 
 
 ---

@@ -17,24 +17,39 @@
 [Mout](http://moutjs.com/)
 
 
-선택 기준은 모두 맥락에 달려있습니다.
+<!-- TODO 라이브러리 선택기준 정리하기 -->
+선택 기준은 모두 맥락에 달려있습니다. 저는 선택 기준을 나중에 정리하겠습니다.
 
 [Differences between Lodash and Ramda](https://stackoverflow.com/questions/71401443/differences-between-lodash-and-ramda)
 
 compose pipe curry
 
+
+[함수형 프로그래밍 영문 위키피디아](https://en.wikipedia.org/wiki/Functional_programming)
+
+[번역이 미약한 함수형 프로그래밍 국문 위키피디아](https://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+
+[나무위키](https://namu.wiki/w/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4?from=%ED%95%A8%EC%88%98%ED%98%95%20%EC%96%B8%EC%96%B4#s-4.5.3.1)
+
+https://github.com/lodash/lodash/wiki/FP-Guide
+
 # 
 
-(Web Village Voyage)[https://www.youtube.com/channel/UCrYp-z-6BvFC6P3009q0peg]
+[Web Village Voyage](https://www.youtube.com/channel/UCrYp-z-6BvFC6P3009q0peg)
 
-## Envato Tuts+
+
+# 
+
+[Practical Functional Programming in JavaScript - Ben Katz](https://www.youtube.com/watch?v=zeZOPB9uxdE)
+
+# Envato Tuts+
 [Learn Functional Programming With JavaScript | FREE COURSE - Envato Tuts+ ](https://www.youtube.com/watch?v=XvLMO2wE3OQ)
 
 리액트와 스펠트의 영향으로 자바스크립트 개발자 커뮤니티는 함수형 프로그래밍을 추구하기 시작했습니다.
 
 https://github.com/tutsplus/learn-functional-programming-in-javascript
 
-### Introduction
+## Introduction
 
 환결설정
 

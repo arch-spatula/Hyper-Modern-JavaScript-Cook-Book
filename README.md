@@ -5,6 +5,14 @@
 Status: meme 🫠  
 Version: 0.03  
 
+![리처드 파인만 설명 사진](img/Richard-Feynman.png)
+
+의도는 이것이지만
+
+![simpson ralph meme](img/simpson-ralph-meme.jpg)
+
+현실은 이렇습니다.
+
 # 이것을 왜 작성하는가?
 자바스크립트를 다루는 법을 정리하는 리포지토리입니다. MDN과 다른 이유는 MDN을 참고할 뿐입니다. 자바스크립트 전체에서 훨씬더 간소한 부분만 다루기 때문입니다.
 최대한 개념을 학습하면 문제를 제공하려고 합니다.

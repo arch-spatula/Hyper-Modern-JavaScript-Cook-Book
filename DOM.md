@@ -66,7 +66,6 @@ const body = document.body;
 body.append("hello, Document Object Model!");  // append, appendChild 2가지 가있습니다. 
 // append는 문자열 같은 콘텐츠를 추가할 수 있습니다. 여러 append를 추가할 수 있습니다.
 // appendChild는 Node를 추가합니다. 1개만 추가할 수 있습니다.
-
 ```
 
 

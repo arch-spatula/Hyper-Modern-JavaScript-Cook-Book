@@ -36,17 +36,102 @@ if (true) {
 
 ## if문
 
+```js
+if (true) console.log('one line test')
+```
+
+`if`문은 1줄로도 작성할 수 있습니다.
+
+
 ### 삼항연산자
 
-꽤 자주 쓰는 문법입니다. 코드 복잡성은 낮출 수 있습니다.
+```js
+true ? console.log('true') : console.log('false');
+```
+
+꽤 자주 쓰는 문법입니다. 코드 복잡성은 낮출 수 있습니다. 리액트를 사용할 때 조건부 랜더링에 자주 사용하는 문법입니다.
 
 주의사항이 있습니다. 중첩 삼항연산자는 자제합니다.
 
+## switch문
+
+리액트의 useReducer 훅에 자주 사용하는 조건문입니다. 조건확장 가능성이 높을 때 사용하기 좋은 조건문입니다.
+
+```js
+function reducer(state, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+  }
+}
+```
+
 ## 논리 연산자
 
-|| && !
+논리합(`||`), 논리곱(`&&`), 부정(`!`)
 
 논리연산자는 진리표랑 똑같습니다. 진리표라고 하니 뭔가 간지나네요. 진리의 문이 다 생각납니다.
+
+|명제 P|명제 Q|연산형|결론
+|---|---|---|---|
+|`true`|`true`|`&&`|`true`|
+|`false`|`true`|`&&`|`false`|
+|`true`|`false`|`&&`|`false`|
+|`false`|`false`|`&&`|`false`|
+|`true`|`true`|`\|\|`|`true`|
+|`false`|`true`|`\|\|`|`true`|
+|`true`|`false`|`\|\|`|`true`|
+|`false`|`false`|`\|\|`|`false`|
+
+
+
+### 단축평가
+
+[출처 - 벨로퍼트](https://learnjs.vlpt.us/useful/03-short-circuiting.html)
+
+```js
+console.log(true && 'hello'); // hello
+console.log(false && 'hello'); // false
+console.log('hello' && 'bye'); // bye
+console.log(null && 'hello'); // null
+console.log(undefined && 'hello'); // undefined
+console.log('' && 'hello'); // ''
+console.log(0 && 'hello'); // 0
+console.log(1 && 'hello'); // hello
+console.log(1 && 1); // 1
+```
+
+처리우선순위를 봅시다. 처리에 대한 진리표입니다. 즉 판별하고 남깁니다.
+
+|앞|뒤|연산형|결과값|
+|---|---|---|---|
+|`true`|`true`|`&&`|뒤|
+|`false`|`true`|`&&`|앞|
+|`true`|`false`|`&&`|뒤|
+|`false`|`false`|`&&`|앞|
+|`true`|`true`|`\|\|`|앞|
+|`false`|`true`|`\|\|`|뒤|
+|`true`|`false`|`\|\|`|앞|
+|`false`|`false`|`\|\|`|뒤|
+
+이연산의 활용법은 fizzbuzz에 사용합니다. =
+
+```js
+const arr = [...Array(100).keys()].map(x => x + 1);
+
+arr.forEach(elem => {
+    let print = ''
+    elem % 3 === 0 ? print += 'fizz' : null;
+    elem % 5 === 0 ? print += 'Buzz' : null;
+    console.log(print || elem)
+})
+```
+
+
 
 ## 반복문
 
@@ -98,6 +183,44 @@ while true {
 위 코드를 브라우저 콘솔에 붙여넣세요.
 
 
+# concatenation operation
+
+```js
+const a = 'abc'
+const b = 'def'
+console.log(a + b)
+```
+
+# 증감연산자
+
+정식명칭이 있어서 소개합니다.
+
+```js
+const a = 1;
+a++ // 증가연산자
+a-- // 감소연산자
+```
+
+# 대입연산
+
+할당연산과 유사하게 생겼지만 다릅니다.
+
+```js
+const a = 0
+a += 10;
+```
+연산하고 할당한다는 의미입니다. 대입연산을 함수에 대입한다는 의미로 착각하지 말도록 합니다.
 
 
+# 비교와 일치
 
+`>`, `>=`, `<=`, `<`은 비교연산자입니다. `==`, `===`은 일치연산입니다. 전자는 '단순일치연산자'이고 후자는 '엄밀일치연산자'입니다.
+
+명칭은 암기합니다.
+
+# 산술연산자
+
+
+나머지 연산자(`%` remainder operator)라고 쉽게 부를 수 있지만 모듈로 연산자(modulo operator)라고 부르도록 합니다.
+
+자바스크립트는 제곱연산자(`**` exponentiation operator)도 의외로 지원해줍니다.
