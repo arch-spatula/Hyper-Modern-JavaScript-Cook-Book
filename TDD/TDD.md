@@ -1,4 +1,4 @@
-# 
+#
 
 https://www.youtube.com/watch?v=u6QfIXgjwGQ
 
@@ -20,3 +20,7 @@ https://www.youtube.com/watch?v=L1dtkLeIz-M&t=936s
 https://www.youtube.com/watch?v=8vfQ6SWBZ-U
 
 [Test-Driven Development // Fun TDD Introduction with JavaScript](https://www.youtube.com/watch?v=Jv2uxzhPFl4)
+
+[[OKKYCON: 2018] 이규원 - 당신들의 TDD가 실패하는 이유](https://www.youtube.com/watch?v=UttzAcbuk5k)
+
+[[OKKYCON: 2018] 양완수 - 테스트를 돌보기 위한 매우 간단한 실천 방법들, 그리고 효과](https://www.youtube.com/watch?v=KXxPzokPpbc)

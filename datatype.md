@@ -8,6 +8,8 @@
 
 프로그래밍은 조금더 고급스러운 계산이라고 생각해도 좋습니다.
 
+https://web.dev/structured-clone/
+
 # 자료형
 
 간단하게 `string`, `number`, `boolean`, `null`, `undefined`, `array`, `object`, `function`, `class`를 중심으로 다룰 수 있습니다. 이정도는 자바스크립트를 작성하면서 무의식 중 외워집니다. 참고로 `class`는 초기에는 피할 수 있지만 나중에는 피할 수 없습니다.
@@ -37,6 +39,12 @@ string = 'hello, JavaScript!';
 사람이 읽고 쓰는 문자 정보입니다. 문자열은 따옴표(`''`), 쌍따옴표(`""`), 백틱(``) 3가지로 만들 수 있습니다.
 
 협업 중이라면 컨벤션에 주의하도록 합니다. 쌍따옴표를 안 쓰고 따옴표랑 백틱만 사용하는 컨벤션이 있을 수 있습니다.
+
+```js
+console.log(String.fromCharCode(97), "a".charCodeAt(0));
+```
+
+`fromCharCode` 정적 매서드랑 `charCodeAt` 동적 매서드를 암기하고 코딩테스트를 풀도록 합시다.
 
 ### Number 숫자
 
@@ -132,9 +140,13 @@ id0([name]) ---> idUndefined([null])
 
 `name`이라는 식별자는 `null`을 참조하고 있습니다. 식별자가 바라볼 곳이 있습니다. 이런 경우 프로그래머가 의도한 경우가 대부분입니다.
 
+### Symbol
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+
 ## 참조형
 
-## array
+### array
 
 https://youtu.be/f-7gUixaETw
 
@@ -153,7 +165,66 @@ const [number, setNumber] = useState(0);
 
 배열 첫번째 원소는 `state`값이고 두번째 원소는 함수입니다. 리액트는 관습적으로 이를 setter함수라고 부릅니다.
 
-## object
+### 세트 Set
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+
+Set은 수학적 집합을 구현하기 위한 자료형입니다. 현재 자바스크립트에서는 리터럴이 없습니다. ES6에 새롭게 생긴 문법입니다.
+
+[Is there a Set literal in JavaScript? - stack overflow](https://stackoverflow.com/questions/35368259/is-there-a-set-literal-in-javascript)
+
+```js
+let arr1 = new Set();
+arr1.add("추가할 값");
+arr1.delete("삭제할 값");
+arr1.clear(); // 비우기
+
+let arr2 = new Set().add("X").add("Y"); // 생성과 동시 삭제
+```
+
+`set`은 수학적 집합입니다. 중복과 순서가 없습니다.
+
+```js
+let testSet = new Set(["tiger", "lion", "dog", "cat"]);
+const key_itr = testSet.keys();
+
+console.log(key_itr.next().value); // tiger
+console.log(key_itr.next().value); // lion
+console.log(key_itr.next().value); // dog
+console.log(key_itr.next().value); // cat
+
+const val_itr = testSet.values();
+
+console.log(val_itr.next().value); // tiger
+console.log(val_itr.next().value); // lion
+console.log(val_itr.next().value); // dog
+console.log(val_itr.next().value); // cat
+```
+
+`key`랑 `value`가 동일한 `object`랑 유사해보입니다.
+
+저의 추론이 완전히 근거가 없지는 않습니다.
+
+```js
+let testSet = new Set();
+
+testSet5.add("홍길동");
+testSet5.add("이순신");
+testSet5.add("강감찬");
+
+const entries = testSet5.entries();
+
+for (let i of entries) {
+  console.log(i);
+}
+//[ '홍길동', '홍길동' ]
+//[ '이순신', '이순신' ]
+//[ '강감찬', '강감찬' ]
+```
+
+[Object.entries() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+
+### object
 
 조금 고급 내용을 알게 된다면 자바스크립트의 모든 조상은 `object`입니다.
 
@@ -238,7 +309,13 @@ function print({ alias, name, actor }) {
 
 인자를 객체로 주면 간단하게 사용할 수 있습니다.
 
-## 함수
+### Map
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+### 함수
+
+https://www.bangseongbeom.com/javascript-closures.html
 
 자바스크립트는 언어에서 함수의 위상은 격이 다릅니다. 많은 자바스크립트 엔지니어는 FP 패러다임을 추구하기 때문에 함수를 정복할 수 없으면 입문자 수준에 멈춰있을 것입니다. 최소한 초급자 수준이라도 되고 싶다면 함수를 아주잘 이해해야 합니다.
 
@@ -264,7 +341,13 @@ var args = [0, 1];
 myFunction(-1, ...args, 2, ...[3]);
 ```
 
-## 클래스
+IIFE
+
+https://developer.mozilla.org/ko/docs/Glossary/IIFE
+
+함수를 선언과 동시에 사용할 수 있습니다.
+
+### 클래스
 
 클래스는 템플릿이고 객체는 구체화한 것처럼 생각하면 간단합니다.
 

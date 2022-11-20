@@ -1,9 +1,10 @@
 # JavaScript Cook Book
-자바스크립트 활용법을 알려줍니다. 자바스크립트라는 프로그래밍 언어를 요리재료처럼 다루는 방법을 알려드리기 위한 리포지토리입니다. 절대 웹으로 봐주시길 바랍니다. 관련 유튜브 링크를 많이 포함하고 있습니다. 
+
+자바스크립트 활용법을 알려줍니다. 자바스크립트라는 프로그래밍 언어를 요리재료처럼 다루는 방법을 알려드리기 위한 리포지토리입니다. 절대 웹으로 봐주시길 바랍니다. 관련 유튜브 링크를 많이 포함하고 있습니다.
 
 작성시작: 2022.09.24.  
 Status: meme 🫠  
-Version: 0.03  
+Version: 0.03
 
 ![리처드 파인만 설명 사진](img/Richard-Feynman.png)
 
@@ -14,19 +15,20 @@ Version: 0.03
 현실은 이렇습니다.
 
 # 이것을 왜 작성하는가?
+
 자바스크립트를 다루는 법을 정리하는 리포지토리입니다. MDN과 다른 이유는 MDN을 참고할 뿐입니다. 자바스크립트 전체에서 훨씬더 간소한 부분만 다루기 때문입니다.
 최대한 개념을 학습하면 문제를 제공하려고 합니다.
 개인적으로 자바스크립트를 다루었던 경험을 공유하고자 합니다.
 
 자바스크립트를 다시 공부하는 게 쉽도록 하기 위해 작성합니다.
 
-참고하는 아티클, 튜토리얼, 강연이 많이 있습니다. 가능하면 자바스크립트 중심으로 설명합니다. 
+참고하는 아티클, 튜토리얼, 강연이 많이 있습니다. 가능하면 자바스크립트 중심으로 설명합니다.
 
 <p align="center">
 <img src="./img/Soyjak_Meme_Javascript.png" width="400px">
 </p>
 
-자바스크립트는 웹 프론트엔드 엔지니어링할 때 사실상 표준입니다. 대체제가 있다고 합니다. Dart & Flutter, Rust & Yew, ELM이 경쟁관계라고 말만 합니다. 정말 말만입니다. 프론트엔드 엔지니어로 취업 혹은 최소한 외주라도 받고 싶으면 JavaScript 공부해야 합니다. 
+자바스크립트는 웹 프론트엔드 엔지니어링할 때 사실상 표준입니다. 대체제가 있다고 합니다. Dart & Flutter, Rust & Yew, ELM이 경쟁관계라고 말만 합니다. 정말 말만입니다. 프론트엔드 엔지니어로 취업 혹은 최소한 외주라도 받고 싶으면 JavaScript 공부해야 합니다.
 
 # 목차
 
@@ -35,7 +37,6 @@ Version: 0.03
 3. 기본 문법
 4. 심화 문법
 
-<!-- TODO 예약어 & 키워드 스니펫 추가하기 -->
 예약어, 키워드
 
 ```JS
@@ -109,6 +110,7 @@ with(document){
 자바스크립트 예약어입니다.
 
 <!-- TODO 특수 객체 목록 정리하기 -->
+
 특수 객체
 다양한 특수 용어
 클린코드
@@ -116,21 +118,15 @@ with(document){
 [![JavaScript meme](https://user-images.githubusercontent.com/84452145/191771735-24cd40b3-c899-44b8-a98b-d1f6247b1b62.jpeg)](https://www.youtube.com/watch?v=Uo3cL4nrGOk)
 저의 목표는 이 개그의 모든 요소를 이해할 수 있게 여러분의 자바스크립트 지식을 끌어올리고자 합니다.
 
-
-<!-- TODO 디버깅 방식 -->
-<!-- TODO console 시리즈 -->
-
 [자바스크립트 중급 강좌 : 140분 완성](https://www.youtube.com/watch?v=4_WLS9Lj6n4)
 
-
 [이벤트 루프, 넌 누구냐](https://tecoble.techcourse.co.kr/post/2021-08-28-event-loop/)
-
 
 [Jake Archibald: 루프 속(In the loop) - JSConf.Asia](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
 
 ```js
 document.body.appendChild(el);
-el.style.display = 'none';
+el.style.display = "none";
 ```
 
 이렇게 작성하면 사용자가 순간 볼 수 있을 것이라는 생각이 들었나요? 스포하면 걱정할 필요 없습니다.
@@ -154,6 +150,7 @@ el.style.display = 'none';
 ```js
 while (true)
 ```
+
 이렇게 실행하면 이벤트 루프에 평생(stack overflow가 발생할 까지) 브라우저는 블로킹이 발생합니다.
 
 requestAnimationFrame(() => {})
@@ -170,7 +167,6 @@ Micro task는 계속 실행합니다.
 # 분류가 필요한 것들
 
 <!-- TODO commonJS 정리하기 -->
-
 
 this 키워드
 
@@ -190,12 +186,13 @@ this 키워드
 
 <!-- TODO 자바스크립트 런타임 개념 -->
 
-
 <!-- TODO const, object.freeze(), concat(), 스프레드 연산자 -->
 <!-- TODO 자바스크립트 메모리 동작방식 -->
+
 immutable JavaScript
 
 함수형 프로그래밍
+
 <!-- TODO 데이터, 액션, 계산에 대한 개념추가 -->
 <!-- TODO 선행학습 정리 -->
 
@@ -207,13 +204,7 @@ immutable JavaScript
 
 [TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
 
-
 [ArrayBuffer](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
-
-
-
-
-
 
 ```JavaScript
 const buffer = new ArrayBuffer(8);
@@ -226,9 +217,8 @@ tree array
 
 [5 Things I Hate About JavaScript](https://www.youtube.com/watch?v=14jlIxVrcvo)
 
-
 1. 커뮤니티
-자바스크립트는 느리고, 메모리 비효율적이고, 버그가 가능하고, 이상한 API를 가지고 있습니다. 간단하고 빠르게 구현하기 좋은 언어입니다. 하지만 안 좋은 점이 너무 많습니다. 그리고 안 좋은데도 계속 사용하게 만들려고 커뮤니티가 엄청 노력합니다.
+   자바스크립트는 느리고, 메모리 비효율적이고, 버그가 가능하고, 이상한 API를 가지고 있습니다. 간단하고 빠르게 구현하기 좋은 언어입니다. 하지만 안 좋은 점이 너무 많습니다. 그리고 안 좋은데도 계속 사용하게 만들려고 커뮤니티가 엄청 노력합니다.
 
 2. 네트워크랑 관련된 디버깅
 
@@ -242,10 +232,9 @@ a | 0  // 1410065408
 0x1 << 31  // -2147483648
 ```
 
-
 3. 객체 순회
-map 고차함수는 key다음 value를 돌려줍니다.
-forEach는 value다음 key를 돌려줍니다.
+   map 고차함수는 key다음 value를 돌려줍니다.
+   forEach는 value다음 key를 돌려줍니다.
 
 일관성이 없습니다.
 
@@ -260,9 +249,6 @@ https://curryyou.tistory.com/441
 상태값을 보관하고 있습니다.
 정규표현식 자체를 피하기를 바랍니다. 물론 하라면 배워야 합니다.
 
-
-
 비동기처리
 
 <!-- TODO 코드퀄리티 기준에 대한 것 작성, 패턴 등... -->
-
