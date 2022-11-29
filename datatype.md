@@ -315,6 +315,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ### 함수
 
+함수를 배울 때는 여러가지 개념이 있습니다. 하나는 문장으로 하나의 흐름을 제어할 때의 함수와 다른 하나는 자료형이자 객체로서의 함수입니다. 여기서는 자료형인 함수를 다루겠습니다. 나중에 클로저같은 초급자를 위한 개념은 따로 다루겠습니다.
+
 https://www.bangseongbeom.com/javascript-closures.html
 
 자바스크립트는 언어에서 함수의 위상은 격이 다릅니다. 많은 자바스크립트 엔지니어는 FP 패러다임을 추구하기 때문에 함수를 정복할 수 없으면 입문자 수준에 멈춰있을 것입니다. 최소한 초급자 수준이라도 되고 싶다면 함수를 아주잘 이해해야 합니다.
@@ -346,6 +348,10 @@ IIFE
 https://developer.mozilla.org/ko/docs/Glossary/IIFE
 
 함수를 선언과 동시에 사용할 수 있습니다.
+
+[JavaScript - arguments (1/2) : arguments란?](https://www.youtube.com/watch?v=i2tPgVFLGcA)
+
+[JavaScript - arguments (2/2) : function length](https://www.youtube.com/watch?v=7gBTjOWm6cU)
 
 ### 클래스
 
