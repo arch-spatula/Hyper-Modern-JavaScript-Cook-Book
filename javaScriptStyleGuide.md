@@ -16,4 +16,4 @@ vim vs emacs 전쟁도 나옵니다. 여기 주제를 벗어납니다.
 
 참고로 Tabs 대 Spaces는 언어마다 권장하는 스타일이 다릅니다. 파이썬은 탭을 권장하고 있습니다. 자바스크립트는 스페이스를 권장합니다. 물론 권장하는 맥락은 React.js에서 indent를 2개 스페이스로 하는 컨벤션 때문입니다. 그리고 나중에 build하면서 스페이스는 모두 삭제합니다.
 
-
+https://github.com/airbnb/javascript
