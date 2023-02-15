@@ -1,40 +1,40 @@
-const pillList = [
-  {
-    id: "9iem7irgi0HFQnnSPkrx",
-    isTaken: false,
-    pillName: "출근 후 영양제",
-    time: "13:30",
-    uid: "ERo01GKLL9PIa2KxKgvZgpm8hGN2",
-    userId: "ERo01GKLL9PIa2KxKgvZgpm8hGN2",
-  },
-  {
-    id: "pFSoLz69wL9XGAUSGIxG",
-    isTaken: false,
-    pillName: "점심약",
-    time: "12:00",
-    uid: "ERo01GKLL9PIa2KxKgvZgpm8hGN2",
-    userId: "ERo01GKLL9PIa2KxKgvZgpm8hGN2",
-  },
-  {
-    id: "uuYw73xK5FamjNFxpAPy",
-    isTaken: false,
-    pillName: "아침약",
-    time: "12:15",
-    uid: "ERo01GKLL9PIa2KxKgvZgpm8hGN2",
-    userId: "ERo01GKLL9PIa2KxKgvZgpm8hGN2",
-  },
-];
+const apiKey = generateKey();
+const url = getURL();
+const settings = getSettings();
 
-/**
- *
- * @param {*} a
- * @param {*} b
- * @returns
- */
-const sortByTime = (a, b) => {
-  if (a.time > b.time) return 1;
-  if (a.time < b.time) return -1;
-};
+const response = await fetch(url, settings);
+const responseData = await response.json();
 
-pillList.sort(sortByTime);
-console.log(pillList);
+logItems(responseData);
+
+// don't touch below this line
+
+function getSettings() {
+  return {
+    method: "GET",
+    mode: "cors",
+    headers: {
+      "X-API-Key": apiKey,
+      "Content-Type": "application/json",
+    },
+  };
+}
+
+function getURL() {
+  return "https://api.boot.dev/v1/courses_rest_api/learn-http/items";
+}
+
+function generateKey() {
+  const characters = "ABCDEF0123456789";
+  let result = "";
+  for (let i = 0; i < 16; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
+function logItems(items) {
+  for (item of items) {
+    console.log(item.name);
+  }
+}

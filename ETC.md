@@ -53,3 +53,7 @@ SPA는 깜빡인 현상이 없어서 앱과 유사한 경험을 제공합니다.
 리액트로 코드분할을 배우면 요청시점에 제공하는 방식으로 성능을 향상시킬 수 있습니다.
 
 처음할 때는 SPA 라우팅을 익히고 그 다음에 더 심화자료를 공부하기를 권장합니다.
+
+How to Use the Payment Request API in JavaScript
+
+https://www.freecodecamp.org/news/payment-request-api-javascript/
