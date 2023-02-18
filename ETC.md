@@ -57,3 +57,9 @@ SPA는 깜빡인 현상이 없어서 앱과 유사한 경험을 제공합니다.
 How to Use the Payment Request API in JavaScript
 
 https://www.freecodecamp.org/news/payment-request-api-javascript/
+
+https://stackoverflow.com/questions/35940290/how-to-convert-base64-string-to-javascript-file-object-like-as-from-file-input-f
+
+https://stackoverflow.com/questions/27159179/how-to-convert-blob-to-file-in-javascript
+
+https://ionic.io/blog/converting-a-base64-string-to-a-blob-in-javascript
