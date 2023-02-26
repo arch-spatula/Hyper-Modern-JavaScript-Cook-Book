@@ -1,13 +1,14 @@
 # 디자인 패턴에 대해서
-https://refactoring.guru/design-patterns/
 
+에릭 감마의 ‘GoF의 디자인 패턴’, 그래디 부치의 ‘UML을 활용한 객체지향 분석 설계’을 참고해야 합니다.
+
+https://refactoring.guru/design-patterns/
 
 # 10 Design Patterns Explained in 10 Minutes
 
 [10 Design Patterns Explained in 10 Minutes](https://www.youtube.com/watch?v=tv-_1er1mWI)
 
 https://fireship.io/lessons/typescript-design-patterns/
-
 
 디자인 패턴의 분류는 다양합니다.
 
@@ -29,14 +30,11 @@ Behavioral: Iterator, Observer, Mediator, State
 
 ```ts
 class Settings {
-
   static instance: Settings;
-  public readonly mode = 'dark';
+  public readonly mode = "dark";
 
   // prevent new with private constructor
-  private constructor() {
-
-  }
+  private constructor() {}
 
   static getInstance(): Settings {
     if (!Settings.instance) {
@@ -45,10 +43,9 @@ class Settings {
 
     return Settings.instance;
   }
-
 }
 
-const settings = new Settings() // throws error
+const settings = new Settings(); // throws error
 const settings = Settings.getInstance();
 ```
 
@@ -56,8 +53,8 @@ const settings = Settings.getInstance();
 
 ```js
 const settings = {
-    dark: true
-}
+  dark: true,
+};
 ```
 
 이렇게 작성된 코드에서 `settings` 객체는 이미 1번만 생성됩니다. 언어가 기본적으로 제공하는 기능들을 활용하고 없을 때 만들도록 합니다.
@@ -69,17 +66,18 @@ const settings = {
 ```ts
 const zombie = {
   eatBrains() {
-    return 'yum 🧠';
-  }
-}
+    return "yum 🧠";
+  },
+};
 
-const chad = Object.create(zombie, { name: { value: 'chad'} });
+const chad = Object.create(zombie, { name: { value: "chad" } });
 
 // chad.__proto__;  // __proto__은 더이상 권장하지 않는 방식입니다.
 Object.getPrototypeOf(chad);
 
 const babyChad = Object.create(chad, { baby: { value: true } });
 ```
+
 `zombie` 객체를 `chad` 객체에게 상속시키는 방법입니다. `chad`를 `babyChad`에게 상속했습니다.
 
 자바스크립트는 프로토타입 기반언어답게 프로토타입체이닝으로 타고 올라가 부모의 메서드에 접근하고 활용할 수 있습니다.
@@ -111,26 +109,23 @@ class HotDog {
   }
 }
 
-const myLunch = new HotDog('gluten free')
-  .addKetchup()
-  .addMustard()
-  .addKraut();
+const myLunch = new HotDog("gluten free").addKetchup().addMustard().addKraut();
 ```
 
 ## 팩토리(Factory)
 
 ```ts
-class IOSButton { }
+class IOSButton {}
 
-class AndroidButton { }
+class AndroidButton {}
 
 // Without Factory
-const button1 = os === 'ios' ? new IOSButton() : new AndroidButton()
-const button2 = os === 'ios' ? new IOSButton() : new AndroidButton()
+const button1 = os === "ios" ? new IOSButton() : new AndroidButton();
+const button2 = os === "ios" ? new IOSButton() : new AndroidButton();
 
 class ButtonFactory {
   createButton(os: string): IOSButton | AndroidButton {
-    if (os === 'ios') {
+    if (os === "ios") {
       return new IOSButton();
     } else {
       return new AndroidButton();
@@ -143,6 +138,7 @@ const factory = new ButtonFactory();
 const btn1 = factory.createButton(os);
 const btn2 = factory.createButton(os);
 ```
+
 `new` 키워드로 수동으로 생성하지 않고 메서드 혹은 함수를 통해서 객체를 생성하는 패턴입니다.
 
 ## 파사드(Facade)
@@ -150,7 +146,6 @@ const btn2 = factory.createButton(os);
 파사드는 건물의 외형을 의미합니다. 건물을 이용하는 사용자는 내부의 복잡성을 굳이 알 필요는 없습니다. 파사드는 구체적인 동작방식을 가리는 API에 불과합니다.
 
 일일이 만들어 사용할 필요 없게 대부분의 패키지는 파사드에 해당할 수 있습니다.
-
 
 ```ts
 class PlumbingSystem {
@@ -168,7 +163,6 @@ class ElectricalSystem {
 }
 
 class House {
-
   private plumbing = new PlumbingSystem();
   private electrical = new ElectricalSystem();
 
@@ -183,7 +177,6 @@ class House {
     this.plumbing.turnOff();
     this.electrical.turnOff();
   }
-
 }
 
 const client = new House();
@@ -196,48 +189,48 @@ client.shutDown();
 프록시는 거대한 객체를 복제하기에는 메모리 사용량이 너무 많을 때 사용합니다. 목적으로 한 객체(target) 대신에 유사한 객체(proxy)로 대체한다는 의미합니다.
 
 ```js
-const original = { name: 'jeff' };
+const original = { name: "jeff" };
 
 const reactive = new Proxy(original, {
   get(target, key) {
-    console.log('Tracking: ', key);
+    console.log("Tracking: ", key);
     return target[key];
   },
   set(target, key, value) {
-    console.log('updating UI...');
+    console.log("updating UI...");
     return Reflect.set(target, key, value);
   },
 });
 
 reactive.name; // 'Tracking: name'
 
-reactive.name = 'bob'; // 'updating UI...'
+reactive.name = "bob"; // 'updating UI...'
 ```
-vue.js에서 사용하는 방식이라고 합니다.
 
+vue.js에서 사용하는 방식이라고 합니다.
 
 # 이터래이터(Iterator)
 
 대부분의 모던 언어는 순회를 지원합니다. 자바스크립트도 존재하지만 약간 부족합니다.
 
 ```ts
-function range(start: number, end: number, step=1) {
+function range(start: number, end: number, step = 1) {
   return {
     [Symbol.iterator]() {
       return this;
     },
     next() {
       if (start < end) {
-        start = start+step;
+        start = start + step;
         return { value: start, done: false };
       }
-      return { done: true, value: end }; 
-    }
-  }
+      return { done: true, value: end };
+    },
+  };
 }
 
 for (const n of range(0, 100, 5)) {
-  console.log(n);   
+  console.log(n);
 }
 ```
 
@@ -248,16 +241,16 @@ for (const n of range(0, 100, 5)) {
 일대다 관계입니다. 하나의 객체에 다른 객체들이 이벤트를 구독하게 만든 패턴입니다. 옵저버는 push-base 시스템에 해당합니다. 현실에서는 일반적인 앱들이 모두 이에 해당합니다. 데이터베이스에 값의 변화는 다른 환경에 모두 반영되는 것과 같은 이치입니다.
 
 ```ts
-import { Subject } from 'rxjs';
+import { Subject } from "rxjs";
 
 const news = new Subject();
 
-const tv1 = news.subscribe(v => console.log(v + 'via Den TV'));
-const tv2 = news.subscribe(v => console.log(v + 'via Batcave TV'));
-const tv3 = news.subscribe(v => console.log(v + 'via Airport TV'));
+const tv1 = news.subscribe((v) => console.log(v + "via Den TV"));
+const tv2 = news.subscribe((v) => console.log(v + "via Batcave TV"));
+const tv3 = news.subscribe((v) => console.log(v + "via Airport TV"));
 
-news.next('Breaking news: ');
-news.next('The war is over ');
+news.next("Breaking news: ");
+news.next("The war is over ");
 
 tv1.unsubscribe();
 ```
@@ -267,24 +260,24 @@ tv1.unsubscribe();
 다대다 관계로 객체끼리 서로 통신해야 할 때 활용합니다. 하지만 중앙에 통제로 다대일로 제어하도록 합니다.
 
 ```ts
-import express from 'express';
+import express from "express";
 const app = express();
 
 // Middleware logic
 function mediator(req, res, next) {
-  console.log('Request Type:', req.method)
-  next()
+  console.log("Request Type:", req.method);
+  next();
 }
 
 app.use(mediator);
 
 // Mediator runs before each route handler
-app.get('/', (req, res) => {
-  res.send('Hello World');
+app.get("/", (req, res) => {
+  res.send("Hello World");
 });
 
-app.get('/about', (req, res) => {
-  res.send('About');
+app.get("/about", (req, res) => {
+  res.send("About");
 });
 ```
 
@@ -299,13 +292,13 @@ interface State {
 
 class HappyState implements State {
   think() {
-    return 'I am happy 🙂';
+    return "I am happy 🙂";
   }
 }
 
 class SadState implements State {
   think() {
-    return 'I am sad 🙁';
+    return "I am sad 🙁";
   }
 }
 
@@ -323,7 +316,6 @@ class Human {
   think() {
     return this.state.think();
   }
-
 }
 
 const human = new Human();

@@ -1,11 +1,9 @@
-const waitTimeMs = 100;
-
-function callback() {
-  console.log("222");
+function* generateSequence(start, end) {
+  for (let i = start; i <= end; i++) {
+    yield i;
+  }
 }
 
-console.log("11111");
-
-setTimeout(callback, waitTimeMs);
-
-console.log("33333");
+for (let value of generateSequence(1, 5)) {
+  console.log(value); // 1, then 2, then 3, then 4, then 5
+}
