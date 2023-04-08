@@ -1,0 +1,8 @@
+{
+  "label": "Modern - JavaScript",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "자바스크립트의 모던한 부분들부터 다룰 것입니다. 또 심오한 동작 원리들을 다룰 것입니다."
+  }
+}
