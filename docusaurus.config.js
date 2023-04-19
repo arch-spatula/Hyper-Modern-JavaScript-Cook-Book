@@ -7,10 +7,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Hyper Modern JavaScript Cookbook",
-  tagline: "Dinosaurs are cool",
+  tagline: "JavaScript 언어와 생태계를 다룹니다.",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
+  // Set the production url of your site here. vercel 배포후 추가합니다.
   url: "https://your-docusaurus-test-site.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "arch-spatula", // Usually your GitHub org/user name.
+  projectName: "Hyper-Modern-JavaScript-Cookbook", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -76,7 +76,7 @@ const config = {
             position: "left",
             label: "Tutorial",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           // 영어 번역을 하면 주석을 풉니다.
           // {
           //   type: "localeDropdown",
@@ -101,23 +101,23 @@ const config = {
               },
             ],
           },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
+          // {
+          //   title: "Community",
+          //   items: [
+          //     {
+          //       label: "Stack Overflow",
+          //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
+          //     },
+          //     {
+          //       label: "Discord",
+          //       href: "https://discordapp.com/invite/docusaurus",
+          //     },
+          //     {
+          //       label: "Twitter",
+          //       href: "https://twitter.com/docusaurus",
+          //     },
+          //   ],
+          // },
           {
             title: "More",
             items: [
@@ -127,14 +127,15 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/arch-spatula/Hyper-Modern-JavaScript-Cook-Book",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Arch-Spatula's Hyper Modern JavaScript Cookbook, Inc. Built with Docusaurus.`,
       },
       prism: {
+        // theme: require("prism-react-renderer/themes/oceanicNext"),
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
