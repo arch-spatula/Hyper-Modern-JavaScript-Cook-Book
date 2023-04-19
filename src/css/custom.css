@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +27,14 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.bg-img {
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background: rgba(0, 0, 0, 0.05); */
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.05);
+  background-image: url(https://user-images.githubusercontent.com/84452145/232893489-9b59d36a-d633-4deb-b758-a11080108bc8.png);
 }
