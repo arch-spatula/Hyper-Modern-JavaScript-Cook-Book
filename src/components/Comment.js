@@ -27,7 +27,6 @@ function Comment() {
       // script.setAttribute("issue-term", "title");
       // script.setAttribute("label", "comment");
       // script.setAttribute("theme", "github-light");
-      // script.crossOrigin = "anonymous";
       script.async = true;
 
       containerRef.current.appendChild(script);
@@ -36,7 +35,7 @@ function Comment() {
     createUtterancesEl();
   }, []);
 
-  return <div ref={containerRef} />;
+  return <div ref={containerRef} style={{ marginTop: "3rem" }} />;
 }
 
 export default Comment;
