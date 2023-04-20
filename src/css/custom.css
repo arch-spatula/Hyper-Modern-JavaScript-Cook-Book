@@ -38,3 +38,7 @@
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.05);
   background-image: url(https://user-images.githubusercontent.com/84452145/232893489-9b59d36a-d633-4deb-b758-a11080108bc8.png);
 }
+
+.text-color {
+  color: #f1f1f1;
+}
