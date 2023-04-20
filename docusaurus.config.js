@@ -80,7 +80,7 @@ const config = {
       navbar: {
         title: "Hyper Modern JavaScript",
         logo: {
-          alt: "My Site Logo",
+          alt: "JavaScript Logo",
           src: "img/logo.svg",
         },
         items: [
