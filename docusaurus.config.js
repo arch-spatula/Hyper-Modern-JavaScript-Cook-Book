@@ -54,7 +54,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/arch-spatula/Hyper-Modern-JavaScript-Cook-Book/tree/dev",
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
@@ -63,7 +63,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/arch-spatula/Hyper-Modern-JavaScript-Cook-Book/tree/dev",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
