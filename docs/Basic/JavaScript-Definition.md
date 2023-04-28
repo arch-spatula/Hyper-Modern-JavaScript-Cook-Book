@@ -48,7 +48,7 @@ sidebar_position: 2
 
 ## 자바스크립트 100초 요약 2가지
 
-<!-- <iframe width="100%" src="https://www.youtube.com/embed/DHjqpvDnNGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe width="100%" src="https://www.youtube.com/embed/DHjqpvDnNGE" title="YouTube video player" frameBorder="0"  allowFullScreen></iframe>
 
 100초 안에 설명하는 자바스크립트입니다.
 
@@ -167,6 +167,8 @@ WebAPI
 
 ---
 
-- <a name="javaScriptMeme">1</a>: [Javascript vs memes](https://dev.to/damxipo/javascript-versus-memes-explaining-various-funny-memes-2o8c)
+- <a name="javaScriptMeme">1</a>:
+  [Javascript vs
+  memes](https://dev.to/damxipo/javascript-versus-memes-explaining-various-funny-memes-2o8c)
 
 - <a name="2">2</a>: https://en.wikipedia.org/wiki/Jeff_Atwood
