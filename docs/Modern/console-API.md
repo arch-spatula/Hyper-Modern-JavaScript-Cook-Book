@@ -123,7 +123,37 @@ console.timeEnd("addUpTo");
 
 ## table()
 
+키와 값의 관계를 갖으면 표로 만들 수 있습니다. 배열(Array), 객체(Object)에서 인덱스, 키와 값의 관계를 표로 보여줍니다.
+
+```js
+const arr = ["a", "b", "c"];
+const obj = { a: 123, b: 456, c: 789 };
+
+console.table(arr);
+console.table(obj);
+```
+
+표로 관계를 확인할 수 있기 때문에 더 가독성이 높습니다.
+
 ## dir()
+
+```js
+const obj = {
+  a: 123,
+  b: 456,
+  c: { d: 789, e: "abc", f: { foo: "under the C" } },
+};
+
+console.dir(obj);
+```
+
+디렉토리 구조처럼 포함관계를 보기 좋습니다. 그래프 구현할 때 활용해 볼 수 있습니다.
+
+```js
+console.dir(document.location);
+```
+
+이렇게 명령하면 일반적인 `console.log`보다 편하게 로그를 볼 수 있습니다. 직접 DOM 조작을 할 상황이 생기면 로깅보기가 쉬워집니다.
 
 ## count()
 
