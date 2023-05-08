@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Console API[^1]
+# Console API
 
 ```js
 console.log("hello, world!");
@@ -14,7 +14,7 @@ console.log("hello, world!");
 
 그렇다면 `log` 이외 정적 메서드가 있는가?
 
-넹.
+넹.[^1]
 
 지금 여기서는 단순한 `log`보다 더 우아한 출력 방법을 배울 것입니다.
 
