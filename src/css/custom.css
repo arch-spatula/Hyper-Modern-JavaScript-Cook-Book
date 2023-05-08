@@ -42,3 +42,7 @@
 .text-color {
   color: #f1f1f1;
 }
+
+iframe {
+  aspect-ratio: 16 / 9;
+}
