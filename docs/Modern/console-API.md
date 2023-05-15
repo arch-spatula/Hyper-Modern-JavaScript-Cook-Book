@@ -157,13 +157,41 @@ console.dir(document.location);
 
 ## count()
 
+```js
+for (let i = 0; i < 3; i++) {
+  console.count();
+}
+
+// default: 1
+// default: 2
+// default: 3
+```
+
+호출횟수를 로깅할 때 활용해볼 수 있습니다. 프론트엔드 엔지니어의 경우 리랜더링 횟수를 빠르게 확인해보고 싶을 때 유용할 수 있습니다.
+
 ## group()
 
-들여쓰기를 표현할 수 있습니다.
+들여쓰기를 표현할 수 있습니다. `group()`과 `groupEnd()`를 짝으로 사용해야 합니다.
+
+```js
+console.log("---");
+console.group();
+console.log("---");
+console.group();
+console.log("---");
+console.groupEnd();
+console.log("---");
+console.groupEnd();
+console.log("---");
+
+// ---
+//   ---
+//     ---
+//   ---
+// ---
+```
 
 ---
-
-## 참고문헌
 
 [^1]: [Console API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Console_API)
 
