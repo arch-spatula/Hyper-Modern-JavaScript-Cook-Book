@@ -1,11 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 준비중입니다.
 
 다음 자바스크립트 개념을 준비하고 있습니다.
 
+- [ ] intro
 - [ ] 컴파일 과정
 - [ ] 아키텍쳐
 - [ ] 메모리
@@ -15,3 +16,4 @@ sidebar_position: 1
 - [ ] this
 - [ ] prototype
 - [ ] class
+- [ ] 이터러블 프로토콜
