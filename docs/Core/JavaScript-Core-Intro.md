@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-draft: true
 ---
 
 # 환영합니다.
@@ -20,4 +19,4 @@ draft: true
 ## 참고 자료
 
 - [<코어 자바스크립트>](http://www.yes24.com/Product/Goods/78586788)
-- [모던 자바스크립트 Deep Dive](http://www.yes24.com/Product/Goods/92742567)
+- [<모던 자바스크립트 Deep Dive>](http://www.yes24.com/Product/Goods/92742567)
