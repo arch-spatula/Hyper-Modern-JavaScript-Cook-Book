@@ -1,5 +1,16 @@
 <!-- TODO Promise 관련 다이어그램 이미지를 추가합니다. -->
 
+<!-- TODO: 비동기 처리에 아래 주석 풀기 -->
+
+<!-- # macro tasks Queue랑 micro tasks Queue 구분
+
+[Difference between microtask and macrotask within an event loop context](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
+
+하지만 TL;DR로 아래만 보시기 바랍니다.
+
+macro tasks Queue: `setTimeout`, `setInterval`, `setImmediate`, `requestAnimationFrame`, `I/O`, `UI rendering`
+micro tasks Queue: `process.nextTick`, `Promises`, `queueMicrotask`, `MutationObserver` -->
+
 # 시작하기
 
 문법적인 구조를 이해하기 어려워서 다양한 아티클 자료를 모은 것입니다.
