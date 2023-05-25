@@ -135,3 +135,38 @@ DOM 트리생성 CSSOM
 ```
 
 `on이벤트이름`방식입니다.
+
+## 이벤트 버블링
+
+```html
+<div class="auth-container">
+  <div class="overlay" onclick="closePopup()">
+    <div class="auth-modal login-modal"></div>
+    <div class="auth-modal signup-modal"></div>
+  </div>
+</div>
+```
+
+html에 이렇게 부모와 자식의 관계를 갖으면 문제가 있을 수 있습니다.
+
+이벤트에 대해서 이해해야 할 부분이 있습니다. 브라우저에서 이벤트가 발생하면 3단계를 거칩니다. 캡쳐, 타겟, 버블입니다. 캡쳐는 발생한 지점으로 접근하는 현상이고 타겟은 이벤트가 발생한 곳에 도달하는 것이도 버블링은 도달 이후다 다시 자식에서 부모로 확산하는 현상입니다.
+
+여기서 파악해야 할 것은 자식의 이벤트는 부모에게도 전파됩니다.
+
+```html
+<div class="auth-container">
+  <div class="auth-modal login-modal"></div>
+  <div class="auth-modal signup-modal"></div>
+  <div class="overlay" onclick="closePopup()"></div>
+</div>
+```
+
+그래서 자매관계로 두고 해결하는 것도 전략입니다.
+
+<iframe
+  width="100%"
+  src="https://www.youtube.com/embed/beLituqpwl8"
+  title="YouTube video player"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
