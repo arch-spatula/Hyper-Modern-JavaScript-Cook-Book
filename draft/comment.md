@@ -4,21 +4,26 @@
 
 아래는 스택오버플로우에서 뽑은 최고의 주석들입니다.
 
-> When I wrote this, only God and I understood what I was doing.\
-> Now, God only knows.
+> When I wrote this, only God and I understood what I was doing.
+>
+> Now, only God knows.
 
 > I dedicate all this code all my work to my wife Darlene who will have to support me in our three children and the dog once it gets released into the public.
 
 > drunk, fix later
 
-> <1nd dev> images are deleted by GDI plus\
-> \---------------------------------------\
+> <1nd dev> images are deleted by GDI plus
+>
+> \--------------------------------------\
+>
 > <2nd dev> I'm not sure about that some
 
-> somedev 1 - 2002.06.07. Adding temporary tracking of login screen.\
+> somedev 1 - 2002.06.07. Adding temporary tracking for logging screen.
+>
 > somedev 2 - 2007.05.22. Temporary my ass.
 
-> This is not a useful comment, but you are useful and can do this <3\
+> This is not a useful comment, but you are useful and can do this <3
+>
 > -by Kelly Vaughn
 
 # comment 주석

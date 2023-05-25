@@ -63,3 +63,9 @@ https://stackoverflow.com/questions/35940290/how-to-convert-base64-string-to-jav
 https://stackoverflow.com/questions/27159179/how-to-convert-blob-to-file-in-javascript
 
 https://ionic.io/blog/converting-a-base64-string-to-a-blob-in-javascript
+
+## Parcel.js는 `fetch text`따위 지원하지 않습니다.
+
+```js
+const html = await fetch(route).then((data) => data.text());
+```
