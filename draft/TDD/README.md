@@ -32,12 +32,12 @@ TDD 방식으로 분명한 요구사항을 정하고 달성하는 방식으로 �
 
 [Why Vitest Is Better Than Jest - Web Dev Simplified](https://www.youtube.com/watch?v=7f-71kYhK00)
 
-https://www.youtube.com/watch?v=g4MdUjxA-S4
-https://www.youtube.com/watch?v=_36vt4fBjOQ
-https://www.youtube.com/watch?v=snFRUjYR6j4
-https://www.youtube.com/watch?v=TRZ2XdmctSQ&t=611s
-https://www.youtube.com/watch?v=9xBjErtlr1o
-https://www.youtube.com/watch?v=g4rMWtPNOr8
+[Jest 강좌 #1 소개, 설치 및 간단한 테스트 작성 - 자바스크립트 테스트 프레임워크](https://www.youtube.com/watch?v=g4MdUjxA-S4)
+[Jest 강좌 #2 유용한 Matchers - 자바스크립트 테스트 프레임워크](https://www.youtube.com/watch?v=_36vt4fBjOQ)
+[Jest 강좌 #3 비동기 코드 테스트 - 자바스크립트 테스트 프레임워크](https://www.youtube.com/watch?v=snFRUjYR6j4)
+[Jest 강좌 #4 테스트 전후 작업 - 자바스크립트 테스트 프레임워크](https://www.youtube.com/watch?v=TRZ2XdmctSQ&t=611s)
+[Jest 강좌 #5 목 함수(Mock Functions) - 자바스크립트 테스트 프레임워크](https://www.youtube.com/watch?v=9xBjErtlr1o)
+[Jest 강좌 #6 리액트 컴포넌트 + 스냅샷 테스트 - 자바스크립트 테스트 프레임워크](https://www.youtube.com/watch?v=g4rMWtPNOr8)
 
 https://www.youtube.com/watch?v=L1dtkLeIz-M&t=936s
 
