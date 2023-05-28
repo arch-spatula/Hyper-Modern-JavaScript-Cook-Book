@@ -69,3 +69,68 @@ https://ionic.io/blog/converting-a-base64-string-to-a-blob-in-javascript
 ```js
 const html = await fetch(route).then((data) => data.text());
 ```
+
+## 유사 배열 순회
+
+유사배열을 순회하는 전략이 있습니다.
+
+```html
+<ul class="list">
+  <il class="item">
+    <h3 class="item-header">고양이 밥주기</h3>
+    <p class="item-description">고양이 물, 사료 챙겨주기</p>
+    <button class="item-btn">완료</button>
+  </il>
+  <il class="item">
+    <h3 class="item-header">장보기</h3>
+    <p class="item-description">토마토, 계란, 초코렛 사기</p>
+    <button class="item-btn">완료</button>
+  </il>
+  <il class="item">
+    <h3 class="item-header">코딩하기</h3>
+    <p class="item-description">리액트 강의 1주차 듣기</p>
+    <button class="item-btn">완료</button>
+  </il>
+</ul>
+```
+
+```js
+const $itemBTN = document.getElementsByClassName(`item-btn`);
+
+const itemBTN = Array.from($itemBTN);
+itemBTN.forEach((elem, idx) => {
+  $itemBTN[idx].addEventListener("click", (event) => {
+    const $item = (document.querySelectorAll(".item")[
+      idx
+    ].style.backgroundColor = "springgreen");
+  });
+});
+```
+
+`html`의 여러개의 노드를 동시선택하면 콘솔은 유사배열을 출력합니다. 이 유사배열을 `Array.from` 정적 메서드로 일반 배열로 만들고 순회할 수 있습니다.
+
+순회가 가능하다고 했죠 권장하는 것은 아닙니다.
+
+[addEventListener - MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+하지만 기본기가 부족합니다. `addEventListener`의 콜백함수로 속에 다른 DOM을 접근하는 함수를 넣을 수 없습니다.
+
+```js
+const $itemBTN = document.getElementsByClassName(`item-btn`);
+
+const check = (event, idx) => {
+  const $item = (document.querySelectorAll(".item")[idx].style.backgroundColor =
+    "springgreen");
+};
+
+const itemBTN = Array.from($itemBTN);
+itemBTN.forEach((elem, idx) => {
+  $itemBTN[idx].addEventListener("click", (event) => {
+    check(event, idx);
+  });
+});
+```
+
+이렇게 하면 책임을 분리할 수 있지만 에러가 발생합니다. 왜 이런 에러가 발생하는지 아직도 동작원리를 정확히 이해하고 있지 못합니다.
+
+놀랍게도 튜터님에게 질문하러 갔더니 하이젠버그처럼 금방 사라졌습니다.
