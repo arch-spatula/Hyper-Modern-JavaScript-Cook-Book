@@ -1,6 +1,5 @@
 ---
 sidebar_position: 4
-draft: true
 ---
 
 # 실행 컨텍스트
@@ -141,7 +140,7 @@ a(1);
 function a() {}
 
 // 익명함수 표현식
-var b = function c() {};
+var b = function () {};
 
 // 기명함수 표현식
 var c = function d() {};
